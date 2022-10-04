@@ -8,13 +8,13 @@ const userSchema=new mongo.Schema(
             type:String,
             trim:true,
             unique:true,
-            required:true
+            required:true,
         },
         password:{
             type:String,
             required:true,
             trim:true,
-            minlength:7,
+            minlength:8,
             validate(value)
             {
                 if(value.toLowerCase().includes('password'))
@@ -37,13 +37,18 @@ const userSchema=new mongo.Schema(
                 }
             }
         },
-
-        tokens:
-        [{
-           token:{
+        profession:{
             type:String,
-            require:true
-           }
+            trim:true,
+        },
+        profilepic: {
+            type:Buffer
+        },
+        tokens: [{
+            token: {
+                type: String,
+                required: true
+            }
         }],
 
     },
@@ -63,14 +68,16 @@ userSchema.methods.toJSON=function()
 userSchema.methods.genToken=async function()
 {
     const user=this
-    const token=await jwt.sign({_id:user._id.toString()},'AadishJain')
+    const token=jwt.sign({ _id: user._id.toString() }, 'AadishJain')
+    console.log(token);
     user.tokens=user.tokens.concat({token})
     await user.save()
     return token
 }
 // for login
-userSchema.statics.findUser=async(email,password)=>{
-    const user=await User.findOne({email})
+userSchema.statics.findUser=async(name,password)=>{
+   
+    const user=await User.findOne({name})
     if(!user)
     {
         throw new Error('unable to login')
@@ -92,5 +99,6 @@ userSchema.pre('save',async function(next){
     }
     next()
 })
+
 const User=mongo.model('User',userSchema)
 module.exports=User

@@ -1,0 +1,8 @@
+{
+    "name":"aa",
+    "recevier":"aadiaaaaash",
+    "currency":"1",
+    "amount":200,
+    "username":"aadish",
+    "message":"hi"
+}
