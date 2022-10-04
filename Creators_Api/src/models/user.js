@@ -52,9 +52,6 @@ const userSchema=new mongo.Schema(
         }],
 
     },
-        {
-            timestamps:true
-        }
 )
 userSchema.methods.toJSON=function()
 {

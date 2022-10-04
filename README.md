@@ -1,19 +1,26 @@
--> SignUp Page With Username and Password here Password And Confirm Password Are Being Hide To Make Our Api More Secure
-![image](https://user-images.githubusercontent.com/87666139/193402489-70cc33a4-4a99-4814-b611-46cc9eb4dec3.png)
-<br>
-<br>
-<br>
--> If password and confirm Password doesn't match it will tell user passwords are not matching
-![image](https://user-images.githubusercontent.com/87666139/193402561-db7e345d-0f75-456f-8292-ee25291bb6aa.png)
-<br>
-<br>
-<br>
--> MongoDb
-![image](https://user-images.githubusercontent.com/87666139/193402611-679c9b39-7458-4ae1-881e-d27acb2b06c6.png)
-<br>
-<br>
-<br>
-->Login Page
-![image](https://user-images.githubusercontent.com/87666139/193402705-5ae7d471-7228-401e-a4ff-5262a433001b.png)
+
+# Donation Api
+routes: 
+
+1. POST /signup -> requires name,password and confirmpassword profession. The password is first hashed and then store in the database
+
+2. POST /login -> requires name and password. If the name and password are correct, then a token is returned. From that token you can access the rest of the API
+
+3. POST /logout -> requires token. If the token is correct, then the token is deleted and the user gets logged out.
+
+4. Get /paginted -> Show the users name by limiting it (paginted concpet)
+
+5. Get /users -> Show the users who are logged in
+
+6. POST /picture ->Uploads the url avatar of the users of creator screens
+
+7. POST /donate a creator who is logged in can donate to other creators 
+
+8. env file <br>
+const link=process.env.password<br>
+password='mongodb+srv://<username>:<password>@cluster0.7mylzvp.mongodb.net/?retryWrites=true&w=majority'<br>
+
+9. run the database in your  mongodb atlas 
+
 
 

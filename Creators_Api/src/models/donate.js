@@ -23,9 +23,6 @@ const donateSchema=new mongo.Schema(
             trim:true
         },
     },
-    {
-        timestamps:true
-    }
 )
 const Donate=mongo.model('Donate',donateSchema)
 module.exports=Donate

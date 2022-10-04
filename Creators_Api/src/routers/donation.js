@@ -7,12 +7,12 @@ const User = require('../models/user')
 route.post('/donate',auth,async function (req, res) {
         try {
             const donate = new Donate(req.body)
-            const user = User.findOne({recevier:req.body.recevier})
+            const user = User.findOne({name:req.body.recevier})
             if(req.body.currency!=='$')
             {
                 res.send('invalid currency')
             }
-            else if(!user){ // if user exist in database we can donate
+            else if(!user){
               res.send('User doesnt exist')
             }
             else {
