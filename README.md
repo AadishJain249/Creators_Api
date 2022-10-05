@@ -18,7 +18,7 @@ routes:
 
 8. env file <br>
 const link=process.env.password<br>
-password='password='mongodb+srv://<username>:<password>@cluster0.7mylzvp.mongodb.net/?retryWrites=true&w=majority'<br>
+password=mongodb+srv://(username):(password)@cluster0.7mylzvp.mongodb.net/?retryWrites=true&w=majority'<br>
 
 9. Run the database in your  mongodb atlas <br>
 
