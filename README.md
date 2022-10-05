@@ -1,5 +1,5 @@
 
-# Donation Api
+# Creators Api
 routes: 
 
 1. POST /signup -> requires name,password and confirmpassword profession. The password is first hashed and then store in the database
@@ -21,6 +21,6 @@ const link=process.env.password<br>
 password='mongodb+srv://<username>:<password>@cluster0.7mylzvp.mongodb.net/?retryWrites=true&w=majority'<br>
 
 9. run the database in your  mongodb atlas 
-
+(Done till task 4 currently working on task 5(optional task))
 
 
