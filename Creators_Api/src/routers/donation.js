@@ -7,7 +7,8 @@ const User = require('../models/user')
 route.post('/donate',auth,async function (req, res) {
         try {
             const donate = new Donate(req.body)
-            const user = User.findOne({name:req.body.recevier})
+            const user = await User.findOne({name:req.body.recevier})
+            console.log(user);
             if(req.body.currency!=='$')
             {
                 res.send('invalid currency')
