@@ -8,7 +8,7 @@ routes:
 
 3. POST /logout -> requires token. If the token is correct, then the token is deleted and the user gets logged out.
 
-4. Get /paginted -> Show the users name by limiting it (paginted concpet)
+4. Get /paginted -> Show the users name by limiting it (paginated concpet)
 
 5. Get /users -> Show the users who are logged in
 
