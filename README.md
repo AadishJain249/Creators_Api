@@ -22,11 +22,10 @@ password=mongodb+srv://(username):(password)@cluster0.7mylzvp.mongodb.net/?retry
 
 9. Run the database in your  mongodb atlas <br>
 
-10.Have used authoriztion of postman in login page to provide auth token every time we log into the system<br>
-Test script in login page
-![image](https://user-images.githubusercontent.com/87666139/194013993-76e2beea-4b56-4efb-af8a-746dd9702d0d.png)<br>
-![image](https://user-images.githubusercontent.com/87666139/194014638-6569696e-f6f7-4e4d-8f29-9ee6a0e38e12.png)<br>
-![image](https://user-images.githubusercontent.com/87666139/194014735-21c58c79-32de-41e4-b12e-a970005eb06e.png)<br>
+10. script in login page
+    ![image](https://user-images.githubusercontent.com/87666139/194013993-76e2beea-4b56-4efb-af8a-746dd9702d0d.png)<br>
+    ![image](https://user-images.githubusercontent.com/87666139/194014638-6569696e-f6f7-4e4d-8f29-9ee6a0e38e12.png)<br>
+    ![image](https://user-images.githubusercontent.com/87666139/194014735-21c58c79-32de-41e4-b12e-a970005eb06e.png)<br>
 
 11. Note=Done till task 4 currently working on task 5(optional task)(Duckcart)
 
